@@ -14,4 +14,7 @@ export default defineConfig({
       REFRESH_TOKEN: envField.string({ context: "server", access: "secret" }),
     },
   },
+  image: {
+    responsiveStyles: true,
+  },
 });
