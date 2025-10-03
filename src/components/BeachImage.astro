@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import ClemensImage from "../assets/clemens-on-the-beach.png";
+---
+
+<section class="image-section">
+  <div class="content">
+    <h2 class="section-title">Kernel unreachable</h2>
+    <Image
+      src={ClemensImage}
+      alt="Fictional image of a man lying on the beach with a cold drink in his hand."
+      width={600}
+      class={"image"}
+    />
+  </div>
+</section>
+
+<style>
+  .image-section {
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--ctp-text);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .image {
+    border-radius: 20px;
+  }
+</style>
